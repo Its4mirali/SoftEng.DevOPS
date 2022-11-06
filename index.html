@@ -2,38 +2,34 @@
 <html lang="en">
 
 <head>
-    <title>Simple ERD</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jquery-ui.css">
+    <title>Simple ERD</title>
     <script src="jquery-3.6.1.min.js"></script>
     <script src="jquery-ui.js"></script>
 </head>
 
 <body>
     <div class="menu">
-        <button type="button" class=".btn-make-table">Add Table</button>
+        <button type="button" class="makeTable()">Add Table</button>
     </div>
     <div class="erd">
-
+        AAA
     </div>
     <script>
         let erd = $(".erd")
 
         const makeTable = () => {
-            html = `
+            html = $(`
                 <div class='ert draggable'>
-                    <div class='ert'><span>ID<span></div>     
+                    <div class='ert title'><span contenteditable>Untitled<span></div>     
+                    <div class='ert'><span contenteditable>ID<span></div>     
                 </div>
-            `
+            `)
 
             erd.append(html)
         }
-
-        $('.btn-make-table').click(() => {
-            makeTable()
-        })
     </script>
 </body>
 
