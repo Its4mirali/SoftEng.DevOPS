@@ -8,27 +8,77 @@
     <title>Simple ERD</title>
     <script src="jquery-3.6.1.min.js"></script>
     <script src="jquery-ui.js"></script>
+    <style>
+        .title {
+            background-color: royalblue;
+            color: white;
+            padding: 1em;
+        }
+
+        .ert {
+            min-width: 9em;
+            min-height: 1em;
+            border: .25em solid royalblue;
+            border-radius: .25em;
+            display: inline-block;
+            position: absolute;
+            background-color: #efefef;
+            opacity: .95;
+        }
+
+        button {
+            padding: 1em;
+            border: 1px solid transparent;
+            background-color: tomato;
+            color: white;
+            width: 100%;
+            border-radius: .25em;
+        }
+
+        .erf {
+            padding: 0.25em;
+            margin: 0.25em;
+        }
+    </style>
 </head>
 
 <body>
     <div class="menu">
-        <button type="button" class="makeTable()">Add Table</button>
+        <button type="button" onclick="addEntity()">Add Table</button>
     </div>
     <div class="erd">
-        AAA
+
     </div>
     <script>
         let erd = $(".erd")
 
-        const makeTable = () => {
+        const makeItem = (name, isTitle = false) => {
+            cls = isTitle ? "title" : "erf"
+            return `<div class='${cls}'><span contenteditable>${name}<span></div>`
+        }
+
+        const addEntity = () => {
             html = $(`
-                <div class='ert draggable'>
-                    <div class='ert title'><span contenteditable>Untitled<span></div>     
-                    <div class='ert'><span contenteditable>ID<span></div>     
+                <div class='ert'>
+                    ${makeItem('Title', true)}    
+                    ${makeItem('ID')}   
+                    ${makeItem('Name')}   
+                    <button type="button" onclick="addItem(this)">Add Item</button>
                 </div>
             `)
 
             erd.append(html)
+
+            //$(".ert").draggable("destroy")
+            $(".ert").each((i, el) => {
+                el = $(el)
+                el.draggable({ "handle": el.find(".title") })
+            })
+        }
+
+        const addItem = function (el) {
+            el = $(el)
+            el.before(makeItem('NoNamed'))
         }
     </script>
 </body>
