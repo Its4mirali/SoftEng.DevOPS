@@ -2,4 +2,6 @@
 Entity Relationship Diagram Drawer
 
 
-- export PATH=/home/ns/<node folder>/bin/:$PATH
+## More
+- Fix new version of nodejs path in ubuntu
+    - `export PATH=/home/ns/<node folder>/bin/:$PATH`
