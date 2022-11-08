@@ -1,8 +1,9 @@
 import './App.css';
+import Panel from './components/Panel';
 
 function App() {
   return (
-    <>Hello World</>
+    <Panel/>
   );
 }
 
