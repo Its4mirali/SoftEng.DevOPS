@@ -3,12 +3,12 @@ import Record from "./Record"
 
 const Tabel = () => {
     return (
-        <>
-            <Record/>
-            <Record/>
-            <Record/>
-            <Record/>
-        </>
+        <div>
+            <Record>ID</Record>
+            <Record>Name</Record>
+            <Record>LastName</Record>
+            <Record>Gender</Record>
+        </div>
     )
 }
 

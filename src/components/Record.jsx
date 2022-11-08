@@ -1,8 +1,12 @@
 import React from "react"
 
-const Record = () => {
+const Record = (props) => {
     return (
-        <>Record</>
+        <div>
+            <span>
+                {props.children}
+            </span>
+        </div>
     )
 }
 
