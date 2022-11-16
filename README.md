@@ -1,2 +1,13 @@
 # DevOPS
-### CI Pipelines
+- Knowledge
+    - OS
+        - Linux File System
+        - Bash
+        - SSH
+            - Key Management
+- Containers
+    - Orchestraition
+        - Kuberneties
+            - POD
+    - Docker
+    - Docker Swarm
