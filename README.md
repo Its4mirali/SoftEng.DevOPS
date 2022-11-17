@@ -1,12 +1,21 @@
 # DevOPS
-
 - Containers
     - Orchestraition
         - Kuberneties
             - POD
     - Docker
     - Docker Swarm
-
+- Management
+    - Log Management
+        - Grafana
+        - Elk Slack
+        - Splunk
+        - Prometheus
+    - Config Management
+        - Puppet
+        - Salt Stack
+        - Ansible
+        - Chef
 - Knowledge
     - OS
         - Linux File System
