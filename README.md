@@ -1,4 +1,12 @@
 # DevOPS
+- Source Control
+    - Git
+        - Github
+        - Gitlab
+    - SVN
+- CI-CD
+    - Pipelines
+    - Testing
 - Containers
     - Orchestraition
         - Kuberneties
