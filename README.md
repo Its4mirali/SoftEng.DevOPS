@@ -4,15 +4,28 @@
         - Github
         - Gitlab
     - SVN
+    - TFS
 - CI-CD
     - Pipelines
+        - Github Actions
+        - Gitlab Actions
+        - Jenkins
+        - Travis-CI
     - Testing
+        - Dependency Check
+        - Unit Testing
+        - Architecture
+        - Linting
 - Containers
     - Orchestraition
         - Kuberneties
             - POD
     - Docker
     - Docker Swarm
+- Cloud
+    - AWS
+    - Azure
+    - GCloud
 - Management
     - Log Management
         - Grafana
@@ -24,6 +37,11 @@
         - Salt Stack
         - Ansible
         - Chef
+- Languages
+    - Python
+    - Node
+    - Ruby
+- Terraform
 - Knowledge
     - OS
         - Linux File System
@@ -34,3 +52,8 @@
         - Proxy Server
         - Load Blancer
         - Other concepts
+
+
+- Uncategorized
+    - Zabbix ???
+    - DevNet ???
